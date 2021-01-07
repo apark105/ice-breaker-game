@@ -83,9 +83,13 @@ function dealCards() {
 
 function resetCards() {
     counter = 0;
+    // console.log('reset cards:', counter, )
     for (let x = 0; x < 3; x++) {
         var elem = document.querySelector('.card-row');
         elem.parentNode.removeChild(elem);
+    }
+    for (let i=0; i <questionsArray.length; i++) {
+        questionsArray[i].flip = false;
     }
     // getAllData();
     createCardLayout();
