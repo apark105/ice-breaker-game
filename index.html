@@ -4,34 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Question Game</title>
     <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
     <div class="header">
+        <div class="header-img-left"><img src="./assets/wine.gif" alt=""></div>
         <div class="top-header">
-            Andy & Rachel 
+            <span>Zoom Questions</span>
+            <div class="bottom-header">~ Game Night Edition ~</div> 
         </div>
-        <div class="bottom-header">
-            ~ Zoom Date Night Edition ~
-        </div>
+        <div class="header-img-right"><img src="./assets/food.png" alt=""></div>
+
+        <!-- <div >
+        </div> -->
     </div>
     <div class="card-container">
         <div class="side-bar">
-            <div class="side-bar-btns">
-                <button class="shuffle">Switch</button>
+            <div class="player-container">
+                <div class="emoji">
+                    <img class="emoji-player emoji-player__1" alt="">
+                </div>
 
+                <div class="player-status">
+                    <span class="current-player">Current Player</span>
+                </div>
             </div>
-            <div class="side-bar-btns">
-                <button class="deal" >Deal</button>
-
+           
+            <div class="btn-container">
+                <div class="side-bar-btns">
+                    <!-- <button class="shuffle">Switch</button> -->
+    
+                </div>
+                <div class="side-bar-btns">
+                    <button class="deal">Deal</button>
+    
+                </div>
+                <div class="side-bar-btns">
+                    <button class="reset">Reset</button>
+    
+                </div>
             </div>
-            <div class="side-bar-btns">
-                <button class="reset">Reset</button>
-
-            </div>
+            
         </div>
         <div class="main-body">
             <!-- 
@@ -58,7 +74,18 @@
 
         </div>
     </div>
-    <script src="main.js"></script>
+
+    <!-- <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script> -->
+
+
+    <script src="main.js">
+
+        // const socket = io();
+
+        // socket.on('connect', () => {
+        //     console.log("connected to server")
+        // });
+    </script>
 </body>
 
 </html>
